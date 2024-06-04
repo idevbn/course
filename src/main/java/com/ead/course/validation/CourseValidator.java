@@ -60,9 +60,8 @@ public class CourseValidator implements Validator {
                          "UserInstructorError",
                          "Instructor not found."
                  );
-             }
-
-             if (userModelOpt.get().getUserType().equals(UserType.STUDENT.toString())) {
+             } else if (userModelOpt.get().getUserType().equals(UserType.STUDENT.toString()) ||
+                        userModelOpt.get().getUserType().equals(UserType.USER.toString())) {
                  errors.rejectValue(
                          "userInstructor",
                          "UserInstructorError",
