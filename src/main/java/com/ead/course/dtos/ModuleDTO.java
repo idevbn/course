@@ -1,8 +1,7 @@
 package com.ead.course.dtos;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
-
-import javax.validation.constraints.NotBlank;
 
 @Data
 public class ModuleDTO {
